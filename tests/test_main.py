@@ -1,6 +1,6 @@
 import requests
 
-api_url = "http://localhost:8000"
+api_url = "http://localhost:8001"
 
 
 def test_healthcheck():
