@@ -78,7 +78,7 @@ async def add_laptop(content: CreateLaptopModel):
 async def get_laptop_by_id(id: int):
     result = [item for item in laptops if item.id == id]
     if len(result) > 0:
-        return result
+        return result[0]
     raise HTTPException(status_code=404, detail="Laptop not found")
 
 
