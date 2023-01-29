@@ -17,7 +17,7 @@ jobs:
 
           # Test container
           - name: Run Docker Container
-            run: docker run -p 8000:80 -d charismatic/ma-laptops-service:latest
+            run: docker run -p 8001:80 -d charismatic/ma-laptops-service:latest
           - name: Set Up Python
             uses: actions/setup-python@v4
             with:
